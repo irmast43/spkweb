@@ -32,8 +32,33 @@
                 </ul>
             </li>
 
-            <li class="{{ Request::segment(1) === 'tables' ? 'active open' : null }}">
+            {{-- <li class="{{ Request::segment(1) === 'tables' ? 'active open' : null }}">
                 <a href="#Tables" class="menu-toggle"><i class="zmdi zmdi-grid"></i><span>Tables</span></a>
+                <ul class="ml-menu">
+                    <li class="{{ Request::segment(2) === 'normal' ? 'active' : null }}"><a href="#('tables.normal')}}">Normal Tables</a></li>
+                    <li class="{{ Request::segment(2) === 'datatable' ? 'active' : null }}"><a href="#('tables.datatable')}}">Jquery Datatables</a></li>
+                    <li class="{{ Request::segment(2) === 'editable' ? 'active' : null }}"><a href="#('tables.editable')}}">Editable Tables</a></li>
+                    <li class="{{ Request::segment(2) === 'footable' ? 'active' : null }}"><a href="#('tables.footable')}}">Foo Tables</a></li>
+                    <li class="{{ Request::segment(2) === 'color' ? 'active' : null }}"><a href="#('tables.color')}}">Tables Color</a></li>
+                </ul>
+            </li> --}}
+
+            <li class="{{ Request::segment(1) === 'tables' ? 'active open' : null }}">
+                <a href="#Tables" class="menu-toggle"><i class="zmdi zmdi-view-toc"></i><span>AHP-TOPSIS</span></a>
+                <ul class="ml-menu">
+                    <li class="{{ Request::segment(2) === 'normal' ? 'active' : null }}"><a href="#('tables.normal')}}">Nilai Bobot Alternatif</a></li>
+                </ul>
+            </li>
+
+            <li class="{{ Request::segment(1) === 'tables' ? 'active open' : null }}">
+                <a href="#Tables" class="menu-toggle"><i class="zmdi zmdi-view-list-alt"></i><span>COPRAS</span></a>
+                <ul class="ml-menu">
+                    <li class="{{ Request::segment(2) === 'normal' ? 'active' : null }}"><a href="#('tables.normal')}}">Nilai Bobot Alternatif</a></li>
+                </ul>
+            </li>
+
+            <li class="{{ Request::segment(1) === 'tables' ? 'active open' : null }}">
+                <a href="#Tables" class="menu-toggle"><i class="zmdi zmdi-grid"></i><span>Confusion Matrix</span></a>
                 <ul class="ml-menu">
                     <li class="{{ Request::segment(2) === 'normal' ? 'active' : null }}"><a href="#('tables.normal')}}">Normal Tables</a></li>
                     <li class="{{ Request::segment(2) === 'datatable' ? 'active' : null }}"><a href="#('tables.datatable')}}">Jquery Datatables</a></li>
@@ -43,7 +68,7 @@
                 </ul>
             </li>
 
-            <li class="{{ Request::segment(1) === 'authentication' ? 'active open' : null }}">
+            {{-- <li class="{{ Request::segment(1) === 'authentication' ? 'active open' : null }}">
                 <a href="#Authentication" class="menu-toggle"><i class="zmdi zmdi-lock"></i><span>Authentication</span></a>
                 <ul class="ml-menu">
                     <li class="{{ Request::segment(2) === 'login' ? 'active' : null }}"><a href="#('authentication.login')}}">Sign In</a></li>
@@ -67,7 +92,7 @@
                     <li class="{{ Request::segment(2) === 'search' ? 'active' : null }}"><a href="#('pages.search')}}">Search Results</a></li>
                     <li class="{{ Request::segment(2) === 'timeline' ? 'active' : null }}"><a href="#('pages.timeline')}}">Timeline</a></li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </aside>

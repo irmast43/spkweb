@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class kriteriaController extends Controller
+class alternatifController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class kriteriaController extends Controller
      */
     public function index()
     {
-        $sql = 'SELECT*FROM kriteria ORDER BY idkriteria asc';
-        $datakriteria = DB::statement($sql);
-        return view('kriteria.index', ['datakriteria' => $datakriteria]);
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class kriteriaController extends Controller
      */
     public function create()
     {
-        return view('kriteria.tambah');
+        //
     }
 
     /**

@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </li>
-            <li class="{{ Request::segment(1) === 'dashboard' ? 'active open' : null }}"><a href="{{url('dashborad.index')}}"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+            <li class="{{ Request::segment(1) === 'dashboard' ? 'active open' : null }}"><a href="{{url('/dashboard')}}"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
             <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
                 <a href="#" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Kriteria</span></a>
                 <ul class="ml-menu">

@@ -15,7 +15,7 @@ class kriteriaController extends Controller
     public function index()
     {
         $sql = 'SELECT*FROM kriteria ORDER BY idkriteria asc';
-        $datakriteria = DB::statement($sql);
+        $datakriteria = DB::select($sql);
         return view('kriteria.index', ['datakriteria' => $datakriteria]);
     }
 
@@ -37,7 +37,10 @@ class kriteriaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $in = $request->all();
+        unset($in['_token']);
+        DB::table('kriteria')->insert($in);
+        return redirect('/kriteria');
     }
 
     /**

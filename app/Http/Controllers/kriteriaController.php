@@ -26,7 +26,7 @@ class kriteriaController extends Controller
      */
     public function create()
     {
-        return view('kriteria.tambah');
+        return view('kriteria.index');
     }
 
     /**

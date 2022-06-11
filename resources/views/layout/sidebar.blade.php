@@ -19,8 +19,8 @@
             <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
                 <a href="#" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Kriteria</span></a>
                 <ul class="ml-menu">
-                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('kriteria')}}">Input Kriteria</a></li>
-                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="#('form.advanced')}}">Lihat Kriteria</a></li>
+                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('kriteria.tambah')}}">Input Kriteria</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('kriteria')}}">Lihat Kriteria</a></li>
                 </ul>
             </li>
 

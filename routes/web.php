@@ -20,5 +20,5 @@ Route::get('/dashboard', function () {
 
 //kriteria
 Route::get('/kriteria', [App\Http\Controllers\kriteriaController::class, 'index'])->name('kriteria');
-Route::get('/kriteria/lihat', [App\Http\Controllers\kriteriaController::class, 'index'])->name('kriteria.lihat');
+Route::get('/kriteria/tambah', [App\Http\Controllers\kriteriaController::class, 'create'])->name('kriteria.tambah');
 

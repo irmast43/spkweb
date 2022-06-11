@@ -16,10 +16,16 @@
             <div class="body">
                 <form id="form_validation" method="POST">
                     <div class="form-group form-float">
+                        Kode Kriteria <input type="text" class="form-control" placeholder="Kode Kriteria" name="name" required>
+                    </div>
+                    <div class="form-group form-float">
                         Nama kriteria <input type="text" class="form-control" placeholder="Nama Kriteria" name="name" required>
                     </div>
                     <div class="form-group form-float">
-                        <input type="text" class="form-control" placeholder="Nilai Bobot kriteria" name="surname" required>
+                        Tambahkan Nilai Bobot AHP-TOPSIS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria AHP-TOPSIS" name="surname" required>
+                    </div>
+                    <div class="form-group form-float">
+                        Tambahkan Nilai Bobot COPRAS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria COPRAS" name="surname" required>
                     </div>
                     <div class="form-group form-float">
                         Atribut

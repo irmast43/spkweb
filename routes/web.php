@@ -21,4 +21,4 @@ Route::get('/dashboard', function () {
 //kriteria
 Route::get('/kriteria', [App\Http\Controllers\kriteriaController::class, 'index'])->name('kriteria');
 Route::get('/kriteria/tambah', [App\Http\Controllers\kriteriaController::class, 'create'])->name('kriteria.tambah');
-
+Route::post('/kriteria/tambah/submit', [App\Http\Controllers\kriteriaController::class, 'store'])->name('kriteria.simpan');

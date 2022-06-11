@@ -11,32 +11,30 @@
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="card">
             <div class="header">
-                <h2><strong>INPUT</strong> KRITERIA</h2>
+                <h2><strong>INPUT</strong> ALTERNATIF</h2>
             </div>
             <div class="body">
-                <form id="form_validation" action="{{route('kriteria.simpan')}}" method="POST">
-                    @csrf
+                <form id="form_validation" method="POST">
                     <div class="form-group form-float">
-                        Kode Kriteria <input type="text" class="form-control" placeholder="Kode Kriteria" name="idkriteria" required>
+                        No <input type="text" class="form-control" placeholder="No" name="name" required>
                     </div>
                     <div class="form-group form-float">
-                        Nama kriteria <input type="text" class="form-control" placeholder="Nama Kriteria" name="nama_kriteria" required>
+                        Nama Alternatif <input type="text" class="form-control" placeholder="Nama Alternatif" name="name" required>
                     </div>
                     <div class="form-group form-float">
-                        Tambahkan Nilai Bobot AHP-TOPSIS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria AHP-TOPSIS" name="bobot1" required>
+                        Alamat <input type="text" class="form-control" placeholder="Alamat" name="village" required>
                     </div>
                     <div class="form-group form-float">
-                        Tambahkan Nilai Bobot COPRAS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria COPRAS" name="bobot2" required>
+                        RT/RW <input type="text" class="form-control" placeholder="RT/RW" name="village" required>
                     </div>
                     <div class="form-group form-float">
-                        Atribut
-                        <div class="radio inlineblock m-r-20">
-                            <input type="radio" name="atribut" id="cost" class="with-gap" value="option1">
-                            <label for="cost">Cost</label>
-                        </div>
-                        <div class="radio inlineblock">
-                            <input type="radio" name="atribut" id="benefit" class="with-gap" value="option2" checked="">
-                            <label for="benefit">Benefit</label>
+                        NIK <input type="text" class="form-control" placeholder="Nomor Induk Keluarga" name="number" required>
+                    </div>
+                    <div class="form-group form-float">
+                        NO.KK <input type="text" class="form-control" placeholder="Nomor Kartu Keluarga" name="number" required>
+                    </div>
+                    <div class="form-group form-float">
+                        NO.HP <input type="text" class="form-control" placeholder="Nomor Telephone" name="number" required>
                     </div>
                     <div class="form-group">
                         <div class="checkbox">

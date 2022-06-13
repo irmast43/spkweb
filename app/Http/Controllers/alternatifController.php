@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class alternatifController extends Controller
 {
@@ -13,7 +14,9 @@ class alternatifController extends Controller
      */
     public function index()
     {
-        //
+        $sql = 'SELECT*FROM alternatif ORDER BY idalternatif asc';
+        $dataalternatif = DB::select($sql);
+        return view('alternatif.index', ['dataalternatif' => $dataalternatif]);
     }
 
     /**
@@ -23,7 +26,7 @@ class alternatifController extends Controller
      */
     public function create()
     {
-        //
+        return view('alternatif.tambah');
     }
 
     /**
@@ -34,7 +37,10 @@ class alternatifController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $in = $request->all();
+        unset($in['_token']);
+        DB::table('alternatif')->insert($in);
+        return redirect('/alternatif');
     }
 
     /**

@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'lihat-kriteria')
+@section('title', 'Kriteria Bantuan')
 @section('content')
 <!-- Basic Table -->
 <div class="row clearfix">

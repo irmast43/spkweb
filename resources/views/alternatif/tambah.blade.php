@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'Input Kriteria')
+@section('title', 'Input Alternatif')
 @section('parentPageTitle', 'Form')
 @section('page-style')
 <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')}}"/>
@@ -35,12 +35,6 @@
                     </div>
                     <div class="form-group form-float">
                         NO.HP <input type="text" class="form-control" placeholder="Nomor Telephone" name="number" required>
-                    </div>
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <input id="checkbox" type="checkbox">
-                            <label for="checkbox">I have read and accept the terms</label>
-                        </div>
                     </div>
                     <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
                 </form>

@@ -16,6 +16,7 @@
                 </div>
             </li>
             <li class="{{ Request::segment(1) === 'dashboard' ? 'active open' : null }}"><a href="{{url('/dashboard')}}"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+
             <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
                 <a href="#" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Kriteria</span></a>
                 <ul class="ml-menu">
@@ -27,8 +28,18 @@
             <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
                 <a href="#Form" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Alternatif</span></a>
                 <ul class="ml-menu">
-                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="#('form.basic')}}">Input Alternatif</a></li>
-                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="#('form.advanced')}}">Lihat Alternatif</a></li>
+                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('alternatif.tambah')}}">Input Alternatif</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Lihat Alternatif</a></li>
+                </ul>
+            </li>
+
+            <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
+                <a href="#Form" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Pembobotan</span></a>
+                <ul class="ml-menu">
+                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('alternatif.tambah')}}">AHP-TOPSIS</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">COPRAS</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Alternatif AHP-TOPSIS</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Alternatif COPRAS</a></li>
                 </ul>
             </li>
 

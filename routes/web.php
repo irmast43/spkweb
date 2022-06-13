@@ -22,3 +22,8 @@ Route::get('/dashboard', function () {
 Route::get('/kriteria', [App\Http\Controllers\kriteriaController::class, 'index'])->name('kriteria');
 Route::get('/kriteria/tambah', [App\Http\Controllers\kriteriaController::class, 'create'])->name('kriteria.tambah');
 Route::post('/kriteria/tambah/submit', [App\Http\Controllers\kriteriaController::class, 'store'])->name('kriteria.simpan');
+
+//alternatif
+Route::get('/alternatif', [App\Http\Controllers\alternatifController::class, 'index'])->name('alternatif');
+Route::get('/alternatif/tambah', [App\Http\Controllers\alternatifController::class, 'create'])->name('alternatif.tambah');
+Route::post('/alternatif/tambah/submit', [App\Http\Controllers\alternatifController::class, 'store'])->name('alternatif.simpan');

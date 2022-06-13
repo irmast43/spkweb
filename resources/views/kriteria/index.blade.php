@@ -25,10 +25,9 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Kriteria</th>
+                                <th>Nama Kriteria</th>
                                 <th>Atribut</th>
-                                <th>Bobot AHP</th>
-                                <th>Bobot Copras</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,8 +36,6 @@
                                 <td>{{$d->idkriteria}}</td>
                                 <td>{{$d->nama_kriteria}}</td>
                                 <td>{{$d->atribut}}</td>
-                                <td>{{$d->bobot1}}</td>
-                                <td>{{$d->bobot2}}</td>
                                 <td>
                                     <a href="" class="badge bg-warning btn-lg"><span data-feather="edit">Edit</span></a>
                                     <a href="" class="badge bg-danger btn-lg" onclick="return confirm(yakin ingin menghapus data?)"><span data-feather="x-circle">Delete</span></a>

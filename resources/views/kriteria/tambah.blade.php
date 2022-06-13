@@ -23,12 +23,6 @@
                         Nama kriteria <input type="text" class="form-control" placeholder="Nama Kriteria" name="nama_kriteria" required>
                     </div>
                     <div class="form-group form-float">
-                        Tambahkan Nilai Bobot AHP-TOPSIS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria AHP-TOPSIS" name="bobot1" required>
-                    </div>
-                    <div class="form-group form-float">
-                        Tambahkan Nilai Bobot COPRAS <input type="text" class="form-control" placeholder="Nilai Bobot kriteria COPRAS" name="bobot2" required>
-                    </div>
-                    <div class="form-group form-float">
                         Atribut
                         <div class="radio inlineblock m-r-20">
                             <input type="radio" name="atribut" id="cost" class="with-gap" value="option1">
@@ -39,12 +33,12 @@
                             <label for="benefit">Benefit</label>
                     </div>
                     <div class="form-group">
-                        <div class="checkbox">
+                        {{-- <div class="checkbox">
                             <input id="checkbox" type="checkbox">
                             <label for="checkbox">I have read and accept the terms</label>
-                        </div>
+                        </div> --}}
+                        <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
                     </div>
-                    <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
                 </form>
             </div>
         </div>

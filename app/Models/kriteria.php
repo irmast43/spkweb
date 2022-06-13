@@ -11,10 +11,8 @@ class kriteria extends Model
     public $timestamp = true;
     protected $table = 'kriteria';
     protected $fillable = [
-        'id_kriteria',
+        'idkriteria',
         'nama_kriteria',
-        'bobot1',
-        'bobot2',
         'atribut',
         'create_at',
         'update_at',

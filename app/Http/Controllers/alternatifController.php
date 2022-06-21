@@ -15,11 +15,8 @@ class alternatifController extends Controller
      */
     public function index(Request $request)
     {
-        $alternatif = DB::table('alternatif')->count() + 1;
-        $kodealternatif =str_pad($alternatif,"0", STR_PAD_LEFT);
-        $sql = 'SELECT*FROM alternatif ORDER BY idalternatif asc';
-        $dataalternatif = DB::select($sql);
-        return view('alternatif.index', ['dataalternatif' => $dataalternatif], compact('alternatif','kodealternatif'));
+        $dataalternatif = DB::table('alternatif')->get();
+        return view('alternatif.index', compact('dataalternatif'));
     }
 
     /**
@@ -71,19 +68,26 @@ class alternatifController extends Controller
      */
     public function edit(Request $request, $id)
     {
+        $request->validate([
+            'nama_alternatif' => 'required',
+            'alamat' => 'required',
+            'rt' => 'required',
+            'nik' => 'required',
+            'no_kk' => 'required',
+            'no_hp' => 'required',
+        ]);
+        $company = alternatif::find($id);
+        $company->nama_alternatif = $request->nama_alternatif;
+        $company->alamat = $request->alamat;
+        $company->rt = $request->rt;
+        $company->nik = $request->nik;
+        $company->no_kk = $request->no_kk;
+        $company->no_hp = $request->no_hp;
+        $company->save();
+        return redirect()->route('alternatif')
+        ->with('sukses','Company Has Been updated successfully');
 
-        $alternatif = alternatif::find($id);
-        $alternatif->nama_alternatif = $request->input('nama_alternatif');
-        $alternatif->alamat = $request->input('alamat');
-        $alternatif->rt = $request->input('rt');
-        $alternatif->nik = $request->input('nik');
-        $alternatif->no_kk = $request->input('no_kk');
-        $alternatif->no_hp = $request->input('no_hp');
-        $alternatif->updated_at = $request->input(date('Y-m-d'));
-        $alternatif->created_at = $request->input(date('Y-m-d'));
-        $alternatif->update();
 
-        return view('alternatif.index',compact('alternatif'));
     }
 
     /**

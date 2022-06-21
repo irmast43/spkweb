@@ -10,11 +10,5 @@ class kriteria extends Model
     use HasFactory;
     public $timestamp = true;
     protected $table = 'kriteria';
-    protected $fillable = [
-        'idkriteria',
-        'nama_kriteria',
-        'atribut',
-        'create_at',
-        'update_at',
-    ];
+    protected $guarded = [];
 }

@@ -14,33 +14,31 @@
                 <h2><strong>INPUT</strong> ALTERNATIF</h2>
             </div>
             <div class="body">
-                <form id="form_validation" action="{{route('alternatif.simpan')}}" method="POST">
+                <form id="form_validation" action="{{ url('alternatif/edit/'.$data->idalternatif) }}" method="POST">
                     @csrf
+                   
                     <div class="form-group form-float">
-                        No <input type="text" class="form-control" value="{{$kodealternatif}}" placeholder="No" name="idalternatif" readonly>
+                        Nama Alternatif <input type="text" class="form-control" value="{{$data->nama_alternatif}}" placeholder="Nama Alternatif" name="nama_alternatif" required>
                     </div>
-                    <div class="form-group form-float">
-                        Nama Alternatif <input type="text" class="form-control" placeholder="Nama Alternatif" name="nama_alternatif" required>
-                    </div>
-                    <div class="form-group form-float">
+                    <div class="form-group form-float" value="{{$data->alamat}}">
                         Alamat
-                        <select class="form-control show-tick ms select2" name="alamat" data-placeholder="Select">
+                        <select class="form-control show-tick ms select2"  name="alamat" data-placeholder="Select">
                             <option></option>
                             <option value="Desa Cagak">Desa Cagak</option>
                             <option value="Dusun Agung">Dusun Agung</option>
                         </select>
                     </div>
                     <div class="form-group form-float">
-                        RT/RW <input type="number" min="1" class="form-control" placeholder="RT/RW" name="rt" required>
+                        RT/RW <input type="number" min="1" value="{{$data->rt}}" class="form-control" placeholder="RT/RW" name="rt" required>
                     </div>
                     <div class="form-group form-float">
-                        NIK <input type="number" class="form-control" placeholder="Nomor Induk Keluarga" name="nik" required>
+                        NIK <input type="number" class="form-control" value="{{$data->nik}}" placeholder="Nomor Induk Keluarga" name="nik" required>
                     </div>
                     <div class="form-group form-float">
-                        NO.KK <input type="number" class="form-control" placeholder="Nomor Kartu Keluarga" name="no_kk" required>
+                        NO.KK <input type="number" class="form-control" value="{{$data->no_kk}}" placeholder="Nomor Kartu Keluarga" name="no_kk" required>
                     </div>
                     <div class="form-group form-float">
-                        NO.HP <input type="text" class="form-control" placeholder="Nomor Telephone" name="no_hp" required>
+                        NO.HP <input type="text" class="form-control" value="{{$data->no_hp}}" placeholder="Nomor Telephone" name="no_hp" required>
                     </div>
                     <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
                 </form>

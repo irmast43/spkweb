@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\kriteria;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class kriteriaController extends Controller
+class bobotahpController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,9 @@ class kriteriaController extends Controller
      */
     public function index()
     {
-        $sql = 'SELECT*FROM kriteria ORDER BY idkriteria asc';
-        $datakriteria = DB::select($sql);
-        return view('kriteria.index', ['datakriteria' => $datakriteria]);
+        $sql = 'SELECT*FROM alternatif ORDER BY idalternatif asc';
+        $dataalternatif = DB::select($sql);
+        return view('bobot.alternatifahp', ['dataalternatif' => $dataalternatif]);
     }
 
     /**
@@ -27,9 +26,7 @@ class kriteriaController extends Controller
      */
     public function create()
     {
-        $kriteria = DB::table('kriteria')->count() + 1;
-        $kodekriteria = "Kode-". str_pad($kriteria,"0", STR_PAD_LEFT);
-        return view('kriteria.tambah', compact('kriteria','kodekriteria'));
+        //
     }
 
     /**
@@ -40,11 +37,7 @@ class kriteriaController extends Controller
      */
     public function store(Request $request)
     {
-
-        $in = $request->all();
-        unset($in['_token']);
-        DB::table('kriteria')->insert($in);
-        return redirect('/kriteria');
+        //
     }
 
     /**
@@ -89,7 +82,6 @@ class kriteriaController extends Controller
      */
     public function destroy($id)
     {
-       kriteria::where('idkriteria',$id)->delete();
-       return redirect()->back()->with('alert', 'Kriteria Berhasil Dihapus!');
+        //
     }
 }

@@ -6,19 +6,10 @@
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="card">
             <div class="header">
-                <h2><strong>Kriteria</strong></h2>
-                <ul class="header-dropdown">
-                    <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="{{route('kriteria.tambah')}}">Tambah kriteria</a></li>
-                        </ul>
-                    </li>
-                    <li class="remove">
-                        <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                    </li>
-                </ul>
+                <h2><strong>Data Kriteria</strong></h2>
+                <div class="row col-lg-1">
+                    <a class="btn btn-success" href="{{route('kriteria.tambah')}}">Tambah</a>
+                </div>
             </div>
             <div class="body">
                 <p>Data kriteria bantuan Desa Cagak Agung, Cerme, Gresik</p>

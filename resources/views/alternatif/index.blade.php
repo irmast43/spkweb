@@ -30,6 +30,7 @@
                                 <th>Nama Alternatif</th>
                                 <th>Alamat</th>
                                 <th>Rt</th>
+                                <th>Rw</th>
                                 <th>NIK</th>
                                 <th>NO.KK</th>
                                 <th>No.HP</th>
@@ -43,6 +44,7 @@
                                 <td>{{$d->nama_alternatif}}</td>
                                 <td>{{$d->alamat}}</td>
                                 <td>{{$d->rt}}</td>
+                                <td>{{$d->rw}}</td>
                                 <td>{{$d->nik}}</td>
                                 <td>{{$d->no_kk}}</td>
                                 <td>{{$d->no_hp}}</td>

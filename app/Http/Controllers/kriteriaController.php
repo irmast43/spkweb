@@ -28,7 +28,7 @@ class kriteriaController extends Controller
     public function create()
     {
         $kriteria = DB::table('kriteria')->count() + 1;
-        $kodekriteria = "Kode-". str_pad($kriteria,"0", STR_PAD_LEFT);
+        $kodekriteria = "C". str_pad($kriteria, STR_PAD_LEFT);
         return view('kriteria.tambah', compact('kriteria','kodekriteria'));
     }
 

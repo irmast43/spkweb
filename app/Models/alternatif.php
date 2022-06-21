@@ -13,5 +13,5 @@ class alternatif extends Model
     protected $table = 'alternatif';
     protected $primaryKey = 'idalternatif';
     protected $guarded = [];
-    
+
 }

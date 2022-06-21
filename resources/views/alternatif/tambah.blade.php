@@ -26,13 +26,29 @@
                         Alamat
                         <select class="form-control show-tick ms select2" name="alamat" data-placeholder="Select">
                             <option></option>
-                            <option value="Desa Cagak">Desa Cagak</option>
+                            <option value="Dusun Cagak">Dusun Cagak</option>
                             <option value="Dusun Agung">Dusun Agung</option>
                         </select>
                     </div>
                     <div class="form-group form-float">
-                        RT/RW <input type="number" min="1" class="form-control" placeholder="RT/RW" name="rt" required>
+                        RT
+                        <select class="form-control show-tick ms select2" name="rt" data-placeholder="Select">
+                            <option></option>
+                            <option value="001">001</option>
+                            <option value="002">002</option>
+                            <option value="003">003</option>
+                        </select>
                     </div>
+                    <div class="form-group form-float">
+                        RW
+                        <select class="form-control show-tick ms select2" name="rw" data-placeholder="Select">
+                            <option></option>
+                            <option value="001">001</option>
+                            <option value="002">002</option>
+                            <option value="003">003</option>
+                        </select>
+                    </div>
+
                     <div class="form-group form-float">
                         NIK <input type="number" class="form-control" placeholder="Nomor Induk Keluarga" name="nik" required>
                     </div>

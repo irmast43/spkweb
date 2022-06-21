@@ -36,10 +36,8 @@
             <li class="{{ Request::segment(1) === 'form' ? 'active open' : null }}">
                 <a href="#Form" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Pembobotan</span></a>
                 <ul class="ml-menu">
-                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('bobot.ahp')}}">AHP-TOPSIS</a></li>
-                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">COPRAS</a></li>
-                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Alternatif AHP-TOPSIS</a></li>
-                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Alternatif COPRAS</a></li>
+                    <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Bobot Alternatif</a></li>
+                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('bobot.ahp')}}">Matriks Perbandingan AHP-TOPSIS</a></li>
                 </ul>
             </li>
 

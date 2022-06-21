@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'Input Alternatif')
+@section('title', 'Edit Alternatif')
 @section('parentPageTitle', 'Form')
 @section('page-style')
 <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')}}"/>
@@ -11,12 +11,12 @@
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="card">
             <div class="header">
-                <h2><strong>INPUT</strong> ALTERNATIF</h2>
+                <h2><strong>EDIT</strong> ALTERNATIF</h2>
             </div>
             <div class="body">
                 <form id="form_validation" action="{{ url('alternatif/edit/'.$data->idalternatif) }}" method="POST">
                     @csrf
-                   
+
                     <div class="form-group form-float">
                         Nama Alternatif <input type="text" class="form-control" value="{{$data->nama_alternatif}}" placeholder="Nama Alternatif" name="nama_alternatif" required>
                     </div>
@@ -24,7 +24,7 @@
                         Alamat
                         <select class="form-control show-tick ms select2"  name="alamat" data-placeholder="Select">
                             <option></option>
-                            <option value="Desa Cagak">Desa Cagak</option>
+                            <option value="Dusun Cagak">Dusun Cagak</option>
                             <option value="Dusun Agung">Dusun Agung</option>
                         </select>
                     </div>

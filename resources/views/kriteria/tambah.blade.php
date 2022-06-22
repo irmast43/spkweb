@@ -18,8 +18,8 @@
                 <form id="form_validation" action="{{route('kriteria.simpan')}}" method="POST">
                     @csrf
                     <div class="form-group form-float">
-                        Kode Kriteria <input type="text" class="form-control" value="{{$kodekriteria}}"
-                            placeholder="Kode Kriteria" name="kode_kriteria" readonly>
+                        Kode Kriteria <input type="text" class="form-control"
+                            placeholder="Kode Kriteria" name="kode_kriteria" required>
                     </div>
                     <div class="form-group form-float">
                         Nama kriteria <input type="text" class="form-control" placeholder="Nama Kriteria"

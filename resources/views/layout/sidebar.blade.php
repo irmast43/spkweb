@@ -38,6 +38,7 @@
                 <ul class="ml-menu">
                     <li class="{{ Request::segment(2) === 'advanced' ? 'active' : null }}"><a href="{{route('alternatif')}}">Bobot Alternatif</a></li>
                     <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('bobot.ahp')}}">Matriks Perbandingan AHP-TOPSIS</a></li>
+                    <li class="{{ Request::segment(2) === 'basic' ? 'active' : null }}"><a href="{{route('bobot.inputahp')}}">Input AHP</a></li>
                 </ul>
             </li>
 

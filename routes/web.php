@@ -34,3 +34,7 @@ Route::post('/alternatif/edit/{idalternatif}', [App\Http\Controllers\alternatifC
 
 //bobot
 Route::get('/bobotahp', [App\Http\Controllers\bobotahpController::class, 'index'])->name('bobot.ahp');
+
+//input bobot ahp
+Route::get('/bobotinputahp', [App\Http\Controllers\inputbobotahpController::class, 'index'])->name('bobot.inputahp');
+Route::get('/bobotinputahp/tambah', [App\Http\Controllers\inputbobotahpController::class, 'create'])->name('bobot.inputtambah');

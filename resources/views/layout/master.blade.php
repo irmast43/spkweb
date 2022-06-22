@@ -61,7 +61,7 @@
                     <div class="col-lg-7 col-md-6 col-sm-12">
                         <h2>@yield('title')</h2>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('dashboard.index')}}"><i class="zmdi zmdi-home"></i> Aero</a></li>
+                            <li class="breadcrumb-item"><a href="{{url('/dashboard')}}"><i class="zmdi zmdi-home"></i> Aero</a></li>
                             @if (trim($__env->yieldContent('parentPageTitle')))
                                 <li class="breadcrumb-item">@yield('parentPageTitle')</li>
                             @endif

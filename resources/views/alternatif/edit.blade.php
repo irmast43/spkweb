@@ -14,9 +14,12 @@
                 <h2><strong>EDIT</strong> ALTERNATIF</h2>
             </div>
             <div class="body">
-                <form id="form_validation" action="{{ url('alternatif/edit/'.$data->idalternatif) }}" method="POST">
+                <form id="form_validation" action="{{ route('alternatif.edit', $company->idalternatif) }}" method="POST">
                     @csrf
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9fe63ffc38d2ae59342455bd6add26ab2b446425
                     <div class="form-group form-float">
                         Nama Alternatif <input type="text" class="form-control" value="{{$data->nama_alternatif}}" placeholder="Nama Alternatif" name="nama_alternatif" required>
                     </div>

@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class alternatif extends Model
 {
     use HasFactory;
-    public $timestamps = true;
-
+    public $timestamps = false;
     protected $table = 'alternatif';
     protected $primaryKey = 'idalternatif';
     protected $guarded = [];

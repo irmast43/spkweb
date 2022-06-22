@@ -30,7 +30,7 @@ Route::get('/alternatif/tambah', [App\Http\Controllers\alternatifController::cla
 Route::post('/alternatif/tambah/submit', [App\Http\Controllers\alternatifController::class, 'store'])->name('alternatif.simpan');
 Route::get('/alternatif/delete/{id}', [App\Http\Controllers\alternatifController::class, 'destroy'])->name('alternatif.destroy');
 Route::get('/alternatif/{id}', [App\Http\Controllers\alternatifController::class, 'show'])->name('alternatif.show');
-Route::post('/alternatif/edit/{id}', [App\Http\Controllers\alternatifController::class, 'edit'])->name('alternatif.edit');
+Route::post('/alternatif/edit/{idalternatif}', [App\Http\Controllers\alternatifController::class, 'edit'])->name('alternatif.edit');
 
 //bobot
 Route::get('/bobotahp', [App\Http\Controllers\bobotahpController::class, 'index'])->name('bobot.ahp');

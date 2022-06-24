@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="body">
-                    <p>Data Penerima bantuan Desa Cagak Agung, Cerme, Gresik</p>
+                    <p>Nilai Perbandingan antar kriteria</p>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -82,54 +82,26 @@
                     <form id="form_validation" action="{{ route('alternatif.simpan') }}" method="POST">
                         @csrf
                         <div class="form-group form-float">
-                            Nama Alternatif <input type="text" class="form-control" placeholder="Nama Alternatif"
+                           No <input type="text" class="form-control" placeholder="Nama Alternatif"
                                 name="nama_alternatif" required>
                         </div>
                         <div class="form-group form-float">
-                            Alamat
-                            <select class="form-control show-tick ms select2" name="alamat" data-placeholder="Select">
-                                <option></option>
-                                <option value="Dusun Cagak">Dusun Cagak</option>
-                                <option value="Dusun Agung">Dusun Agung</option>
-                            </select>
-                        </div>
-                        <div class="form-group form-float">
-                            RT
-                            <select class="form-control show-tick ms select2" name="rt" data-placeholder="Select">
-                                <option></option>
-                                <option value="001">001</option>
-                                <option value="002">002</option>
-                                <option value="003">003</option>
-                            </select>
-                        </div>
-                        <div class="form-group form-float">
-                            RW
-                            <select class="form-control show-tick ms select2" name="rw" data-placeholder="Select">
-                                <option></option>
-                                <option value="001">001</option>
-                                <option value="002">002</option>
-                                <option value="003">003</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group form-float">
-                            NIK <input type="number" class="form-control" placeholder="Nomor Induk Keluarga" name="nik"
+                            Kriteria A <input type="number" class="form-control" placeholder="Nomor Induk Keluarga" name="nik"
                                 required>
                         </div>
                         <div class="form-group form-float">
-                            NO.KK <input type="number" class="form-control" placeholder="Nomor Kartu Keluarga"
+                            Kriteria B <input type="number" class="form-control" placeholder="Nomor Kartu Keluarga"
                                 name="no_kk" required>
                         </div>
                         <div class="form-group form-float">
-                            NO.HP <input type="text" class="form-control" placeholder="Nomor Telephone" name="no_hp"
+                           Nilai <input type="text" class="form-control" placeholder="Nomor Telephone" name="no_hp"
                                 required>
                         </div>
-                        <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>

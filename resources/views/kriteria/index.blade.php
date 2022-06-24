@@ -17,7 +17,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>No</th>
+                                <th>Kode Kriteria</th>
                                 <th>Nama Kriteria</th>
                                 <th>Atribut</th>
                                 <th>Aksi</th>

@@ -11,7 +11,7 @@
         <meta name="author" content="@yield('meta_author', config('app.name'))">
         @yield('meta')
         {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
-        @stack('before-styles')        
+        @stack('before-styles')
         <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}">
         @if (trim($__env->yieldContent('page-style')))
             @yield('page-style')
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
         @stack('after-styles')
     </head>
-    <?php 
+    <?php
         $setting = !empty($_GET['theme']) ? $_GET['theme'] : '';
         $theme = "theme-blush";
         $menu = "";
@@ -46,8 +46,8 @@
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
-                <div class="m-t-30"><img class="zmdi-hc-spin" src="../assets/images/logo.svg" width="48" height="48" alt="Aero"></div>
-                <p>Please wait...</p>        
+                <div class="m-t-30"><img class="zmdi-hc-spin" src="../assets/images/gresik.png" width="48" height="48" alt="SPK"></div>
+                <p>Please wait...</p>
             </div>
         </div>
         <!-- Overlay For Sidebars -->
@@ -61,7 +61,7 @@
                     <div class="col-lg-7 col-md-6 col-sm-12">
                         <h2>@yield('title')</h2>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{url('/dashboard')}}"><i class="zmdi zmdi-home"></i> Aero</a></li>
+                            <li class="breadcrumb-item"><a href="{{url('/dashboard')}}"><i class="zmdi zmdi-home"></i>Dashboard</a></li>
                             @if (trim($__env->yieldContent('parentPageTitle')))
                                 <li class="breadcrumb-item">@yield('parentPageTitle')</li>
                             @endif
@@ -70,20 +70,20 @@
                             @endif
                         </ul>
                         <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
-                    </div>            
+                    </div>
                     <div class="col-lg-5 col-md-6 col-sm-12">
                         <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">                
+            <div class="container-fluid">
                 @yield('content')
             </div>
         </section>
         @yield('modal')
         <!-- Scripts -->
         @stack('before-scripts')
-        <script src="{{ asset('assets/bundles/libscripts.bundle.js') }}"></script>    
+        <script src="{{ asset('assets/bundles/libscripts.bundle.js') }}"></script>
         <script src="{{ asset('assets/bundles/vendorscripts.bundle.js') }}"></script>
 
         <script src="{{ asset('assets/bundles/mainscripts.bundle.js') }}"></script>

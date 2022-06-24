@@ -7,9 +7,9 @@
             <div class="row mb-2">
                 <div class="form-group col-lg-3 form-float">
                     <select class="form-control show-tick ms select2" name="kriteria" data-placeholder="Select">
-                        <option></option>
-                        <option value="Dusun Cagak">Dusun Cagak</option>
-                        <option value="Dusun Agung">Dusun Agung</option>
+                        <option value="Luas Rumah">Luas Rumah</option>
+                        <option value="Kondisi Lantai">Kondisi Lantai</option>
+                        <option value="Kondisi Dinding">Kondisi Dinding</option>
                     </select>
                 </div>
                 <div class="form-group col-lg-3 form-float">
@@ -21,9 +21,9 @@
                 </div>
                 <div class="form-group col-lg-3 form-float">
                     <select class="form-control show-tick ms select2" name="kriteria" data-placeholder="Select">
-                        <option></option>
-                        <option value="Dusun Cagak">Dusun Cagak</option>
-                        <option value="Dusun Agung">Dusun Agung</option>
+                        <option value="Luas Rumah">Luas Rumah</option>
+                        <option value="Kondisi Lantai">Kondisi Lantai</option>
+                        <option value="Kondisi Dinding">Kondisi Dinding</option>
                     </select>
                 </div>
                 <div class="col-lg-2">
@@ -42,7 +42,7 @@
                             <table class="table rowtitle">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
+                                        <th>Kriteria</th>
                                         <th>1</th>
                                         <th>2</th>
                                         <th>3</th>

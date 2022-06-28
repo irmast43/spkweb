@@ -84,7 +84,7 @@ class alternatifController extends Controller
         $company->no_kk = $request->no_kk;
         $company->no_hp = $request->no_hp;
         $company->save();
-        return redirect()->route('alternatif')
+        return redirect()->route('alternatif',compact('company'))
         ->with('sukses','Company Has Been updated successfully');
 
 

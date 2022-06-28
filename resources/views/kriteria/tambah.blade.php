@@ -28,7 +28,6 @@
                     <div class="form-group form-float">
                         Atribut
                         <select class="form-control show-tick ms select2" name="atribut" data-placeholder="Select">
-                            <option></option>
                             <option value="Cost">Cost</option>
                             <option value="Benefit">Benefit</option>
                         </select>

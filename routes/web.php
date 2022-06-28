@@ -22,7 +22,7 @@ Route::get('/dashboard', function () {
 Route::get('/kriteria', [App\Http\Controllers\kriteriaController::class, 'index'])->name('kriteria');
 Route::get('/kriteria/tambah', [App\Http\Controllers\kriteriaController::class, 'create'])->name('kriteria.tambah');
 Route::post('/kriteria/tambah/submit', [App\Http\Controllers\kriteriaController::class, 'store'])->name('kriteria.simpan');
-Route::get('/kriteria/delete/{id}', [App\Http\Controllers\kriteriaController::class, 'destroy'])->name('kriteria.destroy');
+Route::get('/kriteria/delete/{idkriteria}', [App\Http\Controllers\kriteriaController::class, 'destroy'])->name('kriteria.destroy');
 
 //alternatif
 Route::get('/alternatif', [App\Http\Controllers\alternatifController::class, 'index'])->name('alternatif');

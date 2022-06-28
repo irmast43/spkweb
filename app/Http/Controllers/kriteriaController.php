@@ -89,7 +89,7 @@ class kriteriaController extends Controller
      */
     public function destroy($id)
     {
-       kriteria::where('idkriteria',$id)->delete();
+       DB::table('kriteria')->where('idkriteria',$id)->delete();
        return redirect()->back()->with('alert', 'Kriteria Berhasil Dihapus!');
     }
 }

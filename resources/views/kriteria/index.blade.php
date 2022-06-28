@@ -29,7 +29,11 @@
                                 <td>{{$d->kode_kriteria}}</td>
                                 <td>{{$d->nama_kriteria}}</td>
                                 <td>{{$d->atribut}}</td>
-                                <td style="text-right">
+                                <td>
+                                    <a href="" class="badge bg-warning btn-lg"><span data-feather="edit">Edit</span></a>
+                                    <a href="/kriteria/delete/{{$d->idkriteria}}" class="badge bg-danger btn-lg" onclick="return confirm(yakin ingin menghapus data?)"><span data-feather="x-circle">Delete</span></a>
+                                </td>
+                                {{-- <td style="text-right">
                                     <a href="" class="badge bg-warning btn-lg"><span data-feather="edit">Edit</span></a>
                                     <a data-toggle="modal"
                                     data-target="#exampleModalCenter"
@@ -52,12 +56,12 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Close</button>
-                                            <a href="{{route('kriteria.destroy',$d->idkriteria)}}"
+                                            <a href="/kriteria/delete/{{$d->idkriteria}}"
                                                 class="btn btn-danger">Delete</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             @endforeach
                         </tbody>
                     </table>
